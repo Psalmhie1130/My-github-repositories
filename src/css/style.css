@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  color: #f5f1e3;
+  background-color: #9e579e;
+  letter-spacing: 0.02rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+p {
+  padding: 5px 0;
+}
+
+input[type="text"] {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  color: #e5e7eb;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #9e579e;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.github-icon {
+  font-size: 3rem;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.repo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.view-more {
+  background-color: #4f46e5;
+  border-radius: 10px;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.repo-card,
+.repodetail-card {
+  background-color: #1b1a1a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.repo-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#repodetail {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#repodetail p {
+  padding: 15px 0;
+  word-break: break-all;
+}
+
+.repo-mini-details {
+  gap: 10px 50px;
+  margin: 0 0 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.repo-mini-details p {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.icons {
+  color: #c0c0c0;
+}
+
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50h;
+}
+
+.error-page h1 {
+  font-size: 3rem;
+  color: #c0c0c0;
+  margin-bottom: 20px;
+}
+
+.error-status {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .repo-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .github-icon {
+    font-size: 2rem;
+  }
+}
